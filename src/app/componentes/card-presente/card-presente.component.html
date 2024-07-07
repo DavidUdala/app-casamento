@@ -1,0 +1,37 @@
+<div class="card" style="width: 18rem">
+  <img
+    class="card-img-top"
+    src="https://scontent.fcgh10-1.fna.fbcdn.net/v/t39.30808-6/448737281_7616379865125942_5809523864205640693_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lE1HtVJzOSkQ7kNvgFlplXf&_nc_ht=scontent.fcgh10-1.fna&oh=00_AYDT3GaH0hi63IHxu3YacLFRun0aJp8l8xcMrKSmTBt6Vg&oe=66907E26"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Presente: Lua de mel</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+    <div class="d-flex justify-content-between align-item gap-2">
+      <h6 class="text-nowrap">Valor: R$ 300,00</h6>
+      <a href="#" class="btn btn-primary text-nowrap" (click)="open(content)"
+        >Enviar presente</a
+      >
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">R$ 300,00</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img src="https://afinz.com.br/wp-content/uploads/2022/04/QR_Code_Afinz.png" class="card-img-top justify-content-center" alt="...">
+    </div>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-danger" (click)="modal.close()">Voltar</button>
+	</div>
+</ng-template>
+

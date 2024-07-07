@@ -1,0 +1,9 @@
+ .cor-verde {
+  color: black;
+  background-color:#D7DAD3;
+}
+
+.active {
+  color: white !important;
+  background-color:#a7a8a4 !important;
+}
